@@ -1,0 +1,26 @@
+@import "src/Root/vars";
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+  outline: none;
+  list-style: none;
+  background: none;
+  border: none;
+  box-sizing: border-box;
+
+  text-decoration: none;
+
+  font-family: $font-family-default;
+  font-weight: 300;
+  font-size: $font-size-normal;
+  color: $color-black;
+
+  @include unSelectable;
+}
+
+input, textarea, p, a, span {
+  @include selectable;
+}

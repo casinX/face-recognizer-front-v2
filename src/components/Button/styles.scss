@@ -1,0 +1,23 @@
+@import "src/Root/vars";
+
+
+.root{
+  display: inline-block;
+  position: relative;
+  width: auto;
+  padding: 0 $indent-small;
+  text-align: center;
+  line-height: $size-normal;
+  height: $size-normal;
+  border-radius: calc(#{$size-normal});
+  color: $color-black;
+  font-size: $font-size-normal;
+  cursor: pointer;
+  transition: background-color $anim-normal;
+  background-color: $color-yellow;
+  vertical-align: top;
+
+  &:hover{
+    background-color: $color-yellow-hover;
+  }
+}

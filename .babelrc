@@ -1,0 +1,24 @@
+{
+  "presets": ["env", "react"],
+  "plugins": [
+    ["module-alias", [
+      { "src": "./src/utils", "expose": "utils" },
+      { "src": "./src/store", "expose": "store" },
+      { "src": "./src/config", "expose": "config" },
+      { "src": "./src/components", "expose": "components" },
+      { "src": "./src/Root", "expose": "root" }
+    ]],
+    ["provide-modules", {
+      "react": {
+        "default": "React",
+        "destructured": ["Component"]
+      },
+      "classnames": {
+        "default": "cn"
+      }
+    }],
+    "babel-plugin-transform-class-properties",
+    "babel-plugin-transform-decorators-legacy",
+    "babel-plugin-transform-object-rest-spread"
+  ]
+}

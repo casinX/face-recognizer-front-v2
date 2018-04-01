@@ -1,0 +1,14 @@
+@import "src/Root/vars";
+
+
+.root {
+  display: block;
+  position: absolute;
+  height: $size-normal;
+  width: $size-normal;
+  background-image: url("./img/spinner.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+}

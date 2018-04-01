@@ -1,0 +1,13 @@
+@import "src/Root/vars";
+
+
+.root{
+  display: block;
+  position: relative;
+  font-size: $font-size-big;
+  font-family: $font-family-din;
+  text-align: left;
+  color: $color-black;
+
+  @include selectable;
+}
