@@ -18,4 +18,33 @@ html, body, :global(#root) {
   position: relative;
   height: 100%;
   width: 100%;
+  background-color: #000;
+}
+
+.video{
+  display: block;
+  position: absolute;
+  left: calc(50% - 320px);
+  top: calc(50% - 240px);
+  overflow: hidden;
+}
+
+.faceCanvas{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.person{
+  display: block;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  top: calc(50% + 260px);
 }
